@@ -1,0 +1,19 @@
+{
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.rulers": [80, 120],
+  "prettier.jsxSingleQuote": true,
+  "prettier.singleQuote": false,
+
+  "prettier.enable": true,
+  "prettier.bracketSpacing": true,
+  "prettier.endOfLine": "crlf",
+  "prettier.embeddedLanguageFormatting": "auto",
+  "prettier.semi": true,
+  "[javascript]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
