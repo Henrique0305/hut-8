@@ -38,3 +38,26 @@
   color: #fff;
   padding: 23px;
 }
+
+@media (max-width: 1045px) {
+  .footer-info-logo {
+    display: none;
+  }
+  .social-info p {
+    display: none;
+  }
+  .footer-info {
+    display: flex;
+    padding-right: 0px;
+    padding-left: 0px;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 500px) {
+  .footer-info {
+    flex-direction: column;
+  }
+}
