@@ -25,11 +25,11 @@
       <div>
         <nav>
           <ul class="header-navegacao">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="#">Projetos</a></li>
-            <li><a href="./produtos.html">Nossos produtos</a></li>
-            <li><a href="#">Nossa equipe</a></li>
-            <li><a href="#">Entrar</a></li>
+            <li><a class="nav-link" href="./index.html">Home</a></li>
+            <li><a class="nav-link" href="#">Projetos</a></li>
+            <li><a class="nav-link" href="./produtos.html">Nossos produtos</a></li>
+            <li><a class="nav-link" href="#">Nossa equipe</a></li>
+            <li><a class="nav-link" href="#">Entrar</a></li>
           </ul>
         </nav>
       </div>
@@ -39,14 +39,24 @@
 
   <!-- Main start -->
   <main>
-    <section>
+    <section class="categories">
       <h1>Categorias</h1>
-      <ul class="main-itens">
-        <li><a href="camisetas.html"><img src="../assets/camiseta.png" alt="Camisetas"></a></li>
-        <li><a href="#"><img src="../assets/caneca.png" alt="Canecas"></a></li>
-        <li><a href="#"><img src="../assets/moletom.png" alt="Moletons"></a></li>
-        <li><a href=""><img src="../assets/broche.png" alt="Broches"></a></li>
-      </ul>
+      <div>
+        <ul class="main-itens">
+          <li class="item-container"><a href="camisetas.html"><img src="../assets/camiseta.png" alt="Camisetas"></a>
+            <span class="item-name">Camisetas</span>
+          </li>
+          <li class="item-container"><a href="#"><img src="../assets/caneca.png" alt="Canecas"></a>
+            <span class="item-name">Canecas</span>
+          </li>
+          <li class="item-container"><a href="#"><img src="../assets/moletom.png" alt="Moletons"></a>
+            <span class="item-name">Moletons</span>
+          </li>
+          <li class="item-container"><a href=""><img src="../assets/broche.png" alt="Broches"></a>
+            <span class="item-name">Broches</span>
+          </li>
+        </ul>
+      </div>
     </section>
   </main>
   <!-- Main end -->
@@ -95,5 +105,6 @@
 
 <!-- import scripts -->
 <!-- TODO: Adicionar os scripts necessários -->
+<script src="../js/header.js"></script>
 
 </html>
