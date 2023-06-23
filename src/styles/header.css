@@ -31,3 +31,24 @@
 .active {
   font-weight: 700;
 }
+@media (max-width: 1045px) {
+  .header {
+    flex-direction: column;
+    padding-bottom: 20px;
+  }
+}
+@media (max-width: 845px) {
+  .header-imagem-container {
+    align-self: center;
+  }
+  .header {
+    flex-direction: row;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .header-navegacao {
+    flex-direction: column;
+    gap: 2px;
+    align-self: start;
+  }
+}
