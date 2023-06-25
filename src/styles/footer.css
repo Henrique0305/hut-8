@@ -1,5 +1,11 @@
-.footer-info {
+footer {
   background-color: #64008a;
+}
+
+.footer-info {
+  max-width: 1440px;
+  margin: 0 auto;
+
   padding-left: 48px;
   padding-right: 134px;
 
@@ -49,9 +55,9 @@
   .footer-info {
     display: flex;
     padding-right: 0px;
-    padding-left: 0px;
-    justify-content: center;
-    align-items: center;
+    padding-left: 20px;
+    justify-content: flex-start;
+    align-items: flex-start;
     gap: 40px;
   }
 }

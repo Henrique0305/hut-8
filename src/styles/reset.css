@@ -3,6 +3,7 @@
   margin: 0px;
   list-style: none;
   font-family: Montserrat;
+  box-sizing: border-box;
 }
 
 a {

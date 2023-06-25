@@ -1,0 +1,117 @@
+@import "./reset.css";
+@import "./header.css";
+@import "./footer.css";
+
+.produtos-container {
+  padding: 45px 50px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.produtos-header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  margin-bottom: 45px;
+}
+
+.produtos-container img {
+  place-self: start;
+}
+
+.produtos-container h1 {
+  color: #64008a;
+  font-size: 32px;
+  font-family: Montserrat;
+  font-weight: 700;
+}
+
+.produtos-lista {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 45px;
+}
+
+.produtos-lista li {
+  max-width: 515px;
+  display: flex;
+  gap: 24px;
+}
+
+.item-image {
+  max-width: 318px;
+  width: 100%;
+
+  height: 250px;
+  display: flex;
+
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+}
+
+.item-image img {
+  max-width: 318px;
+  width: 100%;
+
+  height: 100%;
+  object-fit: cover;
+  flex: 1;
+}
+
+.item-quantidade-container {
+  position: absolute;
+  background-color: #64008a;
+  width: 100%;
+  height: 34px;
+  bottom: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 36px;
+
+  color: #fff;
+
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 5px;
+  color: #fff;
+  font-size: 30px;
+}
+
+.button-menos {
+}
+
+.item-info {
+}
+
+.item-nome {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 24px;
+}
+
+.item-preco {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
