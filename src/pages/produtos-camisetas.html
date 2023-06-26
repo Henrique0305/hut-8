@@ -30,6 +30,10 @@
             <li><a class="nav-link" href="./produtos.html">Nossos produtos</a></li>
             <li><a class="nav-link" href="#">Nossa equipe</a></li>
             <li><a class="nav-link" href="./entrar.html">Entrar</a></li>
+            <li><a class="nav-link" href="#">
+                <img src="../assets/cart.png" alt="Cart svg">
+                <span id="cartTotal"></span>
+              </a></li>
           </ul>
         </nav>
       </div>
@@ -52,9 +56,9 @@
             <div class="item-image">
               <img src="../assets/camisa1.png" alt="">
               <div class="item-quantidade-container">
-                <button class="button button-menos">+</button>
-                <span class="quantidade-display">0</span>
-                <button class="button button-mais">-</button>
+                <button class="button button-menos" id="camisa-1-menos">-</button>
+                <span class="quantidade-display" id="camisa-1-total">0</span>
+                <button class="button button-mais" id="camisa-1-mais">+</button>
               </div>
             </div>
             <div class="item-info">
@@ -70,9 +74,9 @@
             <div class="item-image">
               <img src="../assets/camisa2.png" alt="">
               <div class="item-quantidade-container">
-                <button class="button button-menos">+</button>
-                <span class="quantidade-display">0</span>
-                <button class="button button-mais">-</button>
+                <button class="button button-menos" id="camisa-2-menos">-</button>
+                <span class="quantidade-display" id="camisa-2-total">0</span>
+                <button class="button button-mais" id="camisa-2-mais">+</button>
               </div>
             </div>
             <div class="item-info">
@@ -88,9 +92,9 @@
             <div class="item-image">
               <img src="../assets/camisa3.png" alt="">
               <div class="item-quantidade-container">
-                <button class="button button-menos">+</button>
-                <span class="quantidade-display">0</span>
-                <button class="button button-mais">-</button>
+                <button class="button button-menos" id="camisa-3-menos">-</button>
+                <span class="quantidade-display" id="camisa-3-total">0</span>
+                <button class="button button-mais" id="camisa-3-mais">+</button>
               </div>
             </div>
             <div class="item-info">
@@ -107,9 +111,9 @@
             <div class="item-image">
               <img src="../assets/camisa4.png" alt="">
               <div class="item-quantidade-container">
-                <button class="button button-menos">+</button>
-                <span class="quantidade-display">0</span>
-                <button class="button button-mais">-</button>
+                <button class="button button-menos" id="camisa-4-menos">-</button>
+                <span class="quantidade-display" id="camisa-4-total">0</span>
+                <button class="button button-mais" id="camisa-4-mais">+</button>
               </div>
             </div>
             <div class="item-info">
@@ -125,9 +129,9 @@
             <div class="item-image">
               <img src="../assets/camisa5.png" alt="">
               <div class="item-quantidade-container">
-                <button class="button button-menos">+</button>
-                <span class="quantidade-display">0</span>
-                <button class="button button-mais">-</button>
+                <button class="button button-menos" id="camisa-5-menos">-</button>
+                <span class="quantidade-display" id="camisa-5-total">0</span>
+                <button class="button button-mais" id="camisa-5-mais">+</button>
               </div>
             </div>
             <div class="item-info">
@@ -143,9 +147,9 @@
             <div class="item-image">
               <img src="../assets/camiseta6.png" alt="">
               <div class="item-quantidade-container">
-                <button class="button button-menos">+</button>
-                <span class="quantidade-display">0</span>
-                <button class="button button-mais">-</button>
+                <button class="button button-menos" id="camisa-6-menos">-</button>
+                <span class="quantidade-display" id="camisa-6-total">0</span>
+                <button class="button button-mais" id="camisa-6-mais">+</button>
               </div>
             </div>
             <div class="item-info">
@@ -210,5 +214,6 @@
 <!-- import scripts -->
 <!-- TODO: Adicionar os scripts necessários -->
 <script src="../js/header.js"></script>
+<script src="../js/adicionar-carrinho.js"></script>
 
 </html>

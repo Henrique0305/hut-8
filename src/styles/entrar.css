@@ -14,7 +14,7 @@ main {
 
 .form-wrapper {
   padding: 45px 50px;
-  max-width: 1440px;
+  max-width: 500px;
   margin: 0 auto;
 }
 
@@ -32,6 +32,7 @@ form {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  margin-bottom: 13px;
 }
 
 input {
@@ -67,5 +68,12 @@ button {
 
 button:hover {
   background: #64008a;
+}
+
+.esqueceu-senha {
+  color: #000;
+  font-size: 16px;
+  font-family: Montserrat;
+  font-weight: 500;
 }
 
