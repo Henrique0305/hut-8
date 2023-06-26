@@ -7,7 +7,7 @@
   <title>Document</title>
 
   <!-- import styles -->
-  <link rel="stylesheet" href="../styles/produtos.css" />
+  <link rel="stylesheet" href="../styles/entrar.css" />
   <!-- import fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -30,7 +30,7 @@
               <a class="nav-link" href="./produtos.html">Nossos produtos</a>
             </li>
             <li><a class="nav-link" href="#">Nossa equipe</a></li>
-            <li><a class="nav-link" href="./entrar.html">Entrar</a></li>
+            <li><a class="nav-link" href="#">Entrar</a></li>
           </ul>
         </nav>
       </div>
@@ -40,28 +40,15 @@
 
   <!-- Main start -->
   <main>
-    <section class="categories">
-      <h1>Categorias</h1>
-      <div>
-        <ul class="main-itens">
-          <li class="item-container">
-            <a href="produtos-camisetas.html"><img src="../assets/camiseta.png" alt="Camisetas" /></a>
-            <span class="item-name">Camisetas</span>
-          </li>
-          <li class="item-container">
-            <a href="#"><img src="../assets/caneca.png" alt="Canecas" /></a>
-            <span class="item-name">Canecas</span>
-          </li>
-          <li class="item-container">
-            <a href="#"><img src="../assets/moletom.png" alt="Moletons" /></a>
-            <span class="item-name">Moletons</span>
-          </li>
-          <li class="item-container">
-            <a href=""><img src="../assets/broche.png" alt="Broches" /></a>
-            <span class="item-name">Broches</span>
-          </li>
-        </ul>
-      </div>
+    <section class="form-wrapper">
+      <h3>Entre ou faça seu cadastro</h3>
+      <form>
+        <input type="email" placeholder="Insira seu e-email">
+        <input type="password" placeholder="Insira sua senha">
+        <button type="button">Entrar</button>
+      </form>
+      <a href="#">Esqueceu sua senha?</a>
+
     </section>
   </main>
   <!-- Main end -->
@@ -109,5 +96,6 @@
 <!-- import scripts -->
 <!-- TODO: Adicionar os scripts necessários -->
 <script src="../js/header.js"></script>
+
 
 </html>

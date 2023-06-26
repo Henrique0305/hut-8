@@ -1,0 +1,71 @@
+@import "./reset.css";
+@import "./header.css";
+@import "./footer.css";
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+.form-wrapper {
+  padding: 45px 50px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+h3 {
+  text-align: center;
+  margin-bottom: 24px;
+
+  color: #000;
+  font-size: 24px;
+  font-family: Montserrat;
+  font-weight: 500;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+input {
+  height: 32px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 0.5px solid #000;
+  background: #fff;
+
+  color: #a1a1a1;
+  font-size: 16px;
+  font-family: Montserrat;
+  font-weight: 500;
+
+  padding: 6px;
+}
+
+button {
+  flex-shrink: 0;
+  border-radius: 4px;
+  background: #b180c4;
+  border: 0;
+
+  color: #f3f3f3;
+  font-size: 16px;
+  font-family: Montserrat;
+  font-weight: 700;
+
+  padding: 6px 0;
+
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #64008a;
+}
+
