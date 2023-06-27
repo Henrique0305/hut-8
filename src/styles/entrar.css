@@ -68,6 +68,7 @@ button {
 
 button:hover {
   background: #64008a;
+  cursor: pointer;
 }
 
 .esqueceu-senha {
