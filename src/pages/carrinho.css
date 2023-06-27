@@ -36,11 +36,29 @@ a {
   margin-bottom: 40px;
 }
 
+.camisetas {
+  margin-bottom: 218px;
+}
+
+.camisetas p {
+  color: #000;
+  font-size: 24px;
+  font-family: Montserrat;
+  font-weight: 500;
+  text-align: center;
+  margin-right: 275px;
+}
+
+.camisetas span {
+  font-weight: bold;
+}
+
 .camisetas-item {
   display: flex;
   gap: 24px;
   justify-content: center;
   margin-right: 250px;
+  margin-bottom: 40px;
 }
 
 .camisetas-item img {
@@ -62,4 +80,40 @@ a {
 
 .camisetas-item li:last-child {
   margin-bottom: 0px;
+}
+
+.camisetas-item-quantidade {
+  background: #64008a;
+  padding: 4px 6px;
+  border-radius: 4px;
+  color: #ffffff;
+  word-spacing: 25px;
+  font-size: 16px;
+  font-family: Montserrat;
+  font-weight: 500;
+}
+
+.footer-continuar-comprando {
+  text-align: center;
+  margin-right: 124px;
+  color: #000;
+  font-size: 24px;
+  font-family: Montserrat;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.footer-pagamento {
+  text-align: center;
+  margin-right: 124px;
+}
+
+.footer-pagamento button {
+  border-radius: 4px;
+  background: #64008a;
+  padding: 6px 132px;
+  color: #fff;
+  font-size: 16px;
+  font-family: Montserrat;
+  font-weight: 700;
 }
