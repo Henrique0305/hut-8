@@ -1,0 +1,32 @@
+@import "./../styles/reset.css";
+
+/* Tirar isso depois */
+a {
+  color: black;
+}
+
+.header {
+  display: flex;
+  gap: 105px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.header h1 {
+  margin-top: 40px;
+  color: #64008a;
+  font-size: 32px;
+  font-family: Montserrat;
+  font-weight: 700;
+}
+
+.header img {
+  width: 32px;
+  height: 32px;
+  margin-top: 43px;
+}
+
+.camisetas-item img {
+  max-width: 168px;
+  height: 132px;
+}
