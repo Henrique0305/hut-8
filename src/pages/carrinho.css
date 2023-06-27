@@ -117,3 +117,7 @@ a {
   font-family: Montserrat;
   font-weight: 700;
 }
+
+.footer-pagamento button:hover {
+  background: #4d0073;
+}
