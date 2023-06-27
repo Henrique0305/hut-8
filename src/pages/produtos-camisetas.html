@@ -30,10 +30,10 @@
             <li><a class="nav-link" href="./produtos.html">Nossos produtos</a></li>
             <li><a class="nav-link" href="#">Nossa equipe</a></li>
             <li><a class="nav-link" href="./entrar.html">Entrar</a></li>
-            <li><a class="nav-link" href="#">
+            <li><button class="button button-cart" href="#" id="open-cart-button">
                 <img src="../assets/cart.png" alt="Cart svg">
-                <span id="cartTotal"></span>
-              </a></li>
+                <span class="cart-total" id="cartTotal"></span>
+              </button></li>
           </ul>
         </nav>
       </div>
@@ -165,6 +165,103 @@
 
       </div>
 
+      <div id="modal-overlay">
+        <div class="cart-container" id="cart-modal">
+
+          <div class="header">
+            <h1>Carrinho</h1>
+            <a href="#"><img src="../assets/material-symbols_close.svg" alt="Fechar"></a>
+          </div>
+
+          <main class="camisetas">
+            <h2>Camisetas</h2>
+
+            <div class="camisetas-item">
+              <img src="../assets/camisa2.png" alt="camiseta roxa">
+              <ul>
+                <li>Camiseta roxa</li>
+                <li>R$ 40,00</li>
+                <li class="camisetas-item-quantidade">
+                  <button class="button">-</button>
+                  <span>1</span>
+                  <button class="button">+</button>
+                </li>
+              </ul>
+            </div>
+
+            <p>Total a pagar: <span>R$ 40,00</span></p>
+          </main>
+
+          <div>
+            <div class="footer-continuar-comprando"><a href="#">Continuar comprando</a></div>
+            <div class="footer-pagamento"><button>Ir para pagamento</button></div>
+          </div>
+        </div>
+
+
+        <div class="payment-container" id="payment-modal" style="display: none;">
+          <div class="payment-header">
+            <button class="button back-to-cart">
+              <img src="../assets/arrow-back.svg" alt="Voltar">
+            </button>
+            <h3>Pagamento</h3>
+            <button class="button close-payment-button" id="close-payment-modal-button">
+              X
+            </button>
+
+          </div>
+
+          <table class="payment-info">
+            <thead>
+              <tr>
+                <th>Qtd</th>
+                <th>Item</th>
+                <th>Valor</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Camiseta roxa</td>
+                <td>R$40,00</td>
+              </tr>
+
+            </tbody>
+          </table>
+
+          <span>
+            Total a pagar: <strong>R$40,00</strong>
+          </span>
+
+          <img class="pix-img" src="../assets/pix.png" alt="PIX logo">
+
+          <div class="payment-options">
+            <img class="qrcode-img" src="../assets/QRCode.png" alt="QRCode">
+
+            <div class="payment-info">
+              <p class="validade">Pix válido até 25/12/2023 13:14:58 (Horário de Brasília)</p>
+
+              <div class="pix-copia-e-cola">
+                <p>Pix Copia e Cola: </p>
+                <div class="input-pix">
+                  <input type="text" value="0000055555666709888999">
+                  <button class="button" style="display: flex; align-items: center;">
+                    <img class="copy-svg" src="../assets/copy.svg" alt="Copiar logo">
+                  </button>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+          <button class="button button-finalizar">
+            Finalizar
+          </button>
+
+        </div>
+      </div>
+
     </section>
   </main>
   <!-- Main end -->
@@ -215,5 +312,7 @@
 <!-- TODO: Adicionar os scripts necessários -->
 <script src="../js/header.js"></script>
 <script src="../js/adicionar-carrinho.js"></script>
+<script src="../js/cart.js"></script>
+
 
 </html>
