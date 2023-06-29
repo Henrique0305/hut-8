@@ -218,9 +218,6 @@ tr {
   gap: 24px;
 }
 
-.qrcode-img {
-}
-
 .payment-info {
   color: #000;
   font-size: 16px;
@@ -230,12 +227,6 @@ tr {
 
 .validade {
   margin-bottom: 24px;
-}
-
-.pix-copia-e-cola {
-}
-
-.copy-svg {
 }
 
 .input-pix {
