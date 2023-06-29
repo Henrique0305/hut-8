@@ -36,6 +36,11 @@ header {
   transform: scale(1.2);
 }
 
+.header-user-buttons {
+  display: flex;
+  gap: 48px;
+}
+
 .active {
   font-weight: 700;
 }
@@ -58,5 +63,8 @@ header {
     flex-direction: column;
     gap: 2px;
     align-self: start;
+  }
+  .header-user-buttons {
+    gap: 20px;
   }
 }

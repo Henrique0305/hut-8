@@ -407,3 +407,47 @@ tr {
   font-weight: 700;
 }
 
+.toast {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 105px;
+  right: 48px;
+  padding-top: 14px;
+  padding-right: 89px;
+  padding-left: 24px;
+  padding-bottom: 14px;
+  background: #d3feb1;
+  border-radius: 4px;
+  border: 0.5px solid #2b5807;
+}
+
+.toast span {
+  color: #2b5807;
+  font-size: 16px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.toast img {
+  margin-right: 8px;
+}
+
+@media (max-width: 1045px) {
+  .toast {
+    top: 175px;
+    padding: 10px;
+  }
+  .toast span {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 845px) {
+  .toast {
+    display: none;
+  }
+}
+
