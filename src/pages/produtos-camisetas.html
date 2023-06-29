@@ -165,12 +165,14 @@
 
       </div>
 
-      <div id="modal-overlay">
-        <div class="cart-container" id="cart-modal">
+      <div id="modal-overlay" style="display: none;">
+        <div class="cart-container" id="cart-modal" style="display: none;">
 
-          <div class="header">
+          <div class="cart-header">
+            <div></div>
             <h1>Carrinho</h1>
-            <a href="#"><img src="../assets/material-symbols_close.svg" alt="Fechar"></a>
+            <button class="button " id="close-cart-button" href="#"><img src="../assets/material-symbols_close.svg"
+                alt="Fechar"></button>
           </div>
 
           <main class="camisetas">
@@ -194,71 +196,72 @@
 
           <div>
             <div class="footer-continuar-comprando"><a href="#">Continuar comprando</a></div>
-            <div class="footer-pagamento"><button>Ir para pagamento</button></div>
+            <div class="footer-pagamento" id="go-to-payment-button"><button>Ir para pagamento</button></div>
           </div>
         </div>
 
+        <div id="payment-modal" style="display: none;">
+          <div class="payment-container">
+            <div class="payment-header">
+              <button class="button back-to-cart" id="back-to-cart-button">
+                <img src="../assets/arrow-back.svg" alt="Voltar">
+              </button>
+              <h3>Pagamento</h3>
+              <button class="button close-payment-button" id="close-payment-modal-button">
+                X
+              </button>
 
-        <div class="payment-container" id="payment-modal" style="display: none;">
-          <div class="payment-header">
-            <button class="button back-to-cart">
-              <img src="../assets/arrow-back.svg" alt="Voltar">
-            </button>
-            <h3>Pagamento</h3>
-            <button class="button close-payment-button" id="close-payment-modal-button">
-              X
-            </button>
+            </div>
 
-          </div>
+            <table class="payment-info">
+              <thead>
+                <tr>
+                  <th>Qtd</th>
+                  <th>Item</th>
+                  <th>Valor</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Camiseta roxa</td>
+                  <td>R$40,00</td>
+                </tr>
 
-          <table class="payment-info">
-            <thead>
-              <tr>
-                <th>Qtd</th>
-                <th>Item</th>
-                <th>Valor</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>Camiseta roxa</td>
-                <td>R$40,00</td>
-              </tr>
+              </tbody>
+            </table>
 
-            </tbody>
-          </table>
+            <span>
+              Total a pagar: <strong>R$40,00</strong>
+            </span>
 
-          <span>
-            Total a pagar: <strong>R$40,00</strong>
-          </span>
+            <img class="pix-img" src="../assets/pix.png" alt="PIX logo">
 
-          <img class="pix-img" src="../assets/pix.png" alt="PIX logo">
+            <div class="payment-options">
+              <img class="qrcode-img" src="../assets/QRCode.png" alt="QRCode">
 
-          <div class="payment-options">
-            <img class="qrcode-img" src="../assets/QRCode.png" alt="QRCode">
+              <div class="payment-info">
+                <p class="validade">Pix válido até 25/12/2023 13:14:58 (Horário de Brasília)</p>
 
-            <div class="payment-info">
-              <p class="validade">Pix válido até 25/12/2023 13:14:58 (Horário de Brasília)</p>
+                <div class="pix-copia-e-cola">
+                  <p>Pix Copia e Cola: </p>
+                  <div class="input-pix">
+                    <input type="text" value="0000055555666709888999">
+                    <button class="button" style="display: flex; align-items: center;">
+                      <img class="copy-svg" src="../assets/copy.svg" alt="Copiar logo">
+                    </button>
+                  </div>
 
-              <div class="pix-copia-e-cola">
-                <p>Pix Copia e Cola: </p>
-                <div class="input-pix">
-                  <input type="text" value="0000055555666709888999">
-                  <button class="button" style="display: flex; align-items: center;">
-                    <img class="copy-svg" src="../assets/copy.svg" alt="Copiar logo">
-                  </button>
                 </div>
 
               </div>
 
             </div>
+            <button class="button button-finalizar">
+              Finalizar
+            </button>
 
           </div>
-          <button class="button button-finalizar">
-            Finalizar
-          </button>
-
         </div>
       </div>
 
